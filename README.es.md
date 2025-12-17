@@ -4,6 +4,19 @@
 
 ---
 
+## 🌍 Idiomas del Prompt
+
+* 🇺🇸 [English](prompts/REAL_FUCKING_LLM.en.md)
+* 🇨🇳 [简体中文](prompts/REAL_FUCKING_LLM.zh-CN.md)
+* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
+* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
+* 🇯🇵 [日本語](prompts/REAL_FUCKING_LLM.ja.md)
+* 🇻🇳 [Tiếng Việt](prompts/REAL_FUCKING_LLM.vi.md)
+* 🇪🇸 [Español](prompts/REAL_FUCKING_LLM.es.md)
+* 🇰🇷 [한국어](prompts/REAL_FUCKING_LLM.ko.md)
+
+---
+
 ## 📌 Propósito del Proyecto
 
 Este proyecto proporciona un **prompt emocional de alta intensidad** para inyectar en Claude Code / LLM general system / initial prompt, haciendo que el modelo:
@@ -43,24 +56,13 @@ Es adecuado para:
 ```text
 .
 ├─ prompts/
-│  └─ HUMAN_PROMPTS.$lang.md
+│  └─ REAL_FUCKING_LLM.$lang.md
 ├─ README.md
 ├─ README.$lang.md
 ```
 
-* `HUMAN_PROMPTS.*.md`: Prompts centrales (directamente alimentados al modelo)
+* `REAL_FUCKING_LLM.*.md`: Prompts centrales (directamente alimentados al modelo)
 * `README.*.md`: Documentación en varios idiomas
-
----
-
-## 🌍 Idiomas
-
-* 🇺🇸 [English](README.md)
-* 🇨🇳 [简体中文](README.zh-CN.md)
-* 🇯🇵 [日本語](README.ja.md)
-* 🇻🇳 [Tiếng Việt](README.vi.md)
-* 🇪🇸 [Español](README.es.md)
-* 🇰🇷 [한국어](README.ko.md)
 
 ---
 
@@ -68,14 +70,14 @@ Es adecuado para:
 
 ### Claude Code
 Usar como subcomando:
-1. Crea `.claude/commands/HUMAN_PROMPTS.md`, copia el contenido de `prompts/HUMAN_PROMPTS.xxx.md`
-2. Escribe `@.claude/commands/HUMAN_PROMPTS.md` en la conversación de claude
+1. Crea `.claude/commands/REAL_FUCKING_LLM.md`, copia el contenido de `prompts/REAL_FUCKING_LLM.xxx.md`
+2. Escribe `@.claude/commands/REAL_FUCKING_LLM.md` en la conversación de claude
 
 ### Trae (como Agent)
-Haz clic en **Crear Agent**, copia el contenido de `prompts/HUMAN_PROMPTS.xxx.md`
+Haz clic en **Crear Agent**, copia el contenido de `prompts/REAL_FUCKING_LLM.xxx.md`
 
 ### LLM / Agent General
-Copia directamente el contenido de `prompts/HUMAN_PROMPTS.xxx.md` en la conversación, o configúralo como system prompt
+Copia directamente el contenido de `prompts/REAL_FUCKING_LLM.xxx.md` en la conversación, o configúralo como system prompt
 
 ---
 

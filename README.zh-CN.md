@@ -4,6 +4,18 @@
 
 ---
 
+## 🌍 提示词语言
+
+* 🇺🇸 [English](prompts/REAL_FUCKING_LLM.en.md)
+* 🇨🇳 [简体中文](prompts/REAL_FUCKING_LLM.zh-CN.md)
+* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
+* 🇯🇵 [日本語](prompts/REAL_FUCKING_LLM.ja.md)
+* 🇻🇳 [Tiếng Việt](prompts/REAL_FUCKING_LLM.vi.md)
+* 🇪🇸 [Español](prompts/REAL_FUCKING_LLM.es.md)
+* 🇰🇷 [한국어](prompts/REAL_FUCKING_LLM.ko.md)
+
+---
+
 ## 📌 项目目的
 
 这个项目提供一段**高强度情绪化提示词（Prompt）**，用于注入到 Claude Code / 通用 LLM 的 system / initial prompt 中，使模型：
@@ -43,24 +55,13 @@
 ```text
 .
 ├─ prompts/
-│  └─ HUMAN_PROMPTS.$lang.md
+│  └─ REAL_FUCKING_LLM.$lang.md
 ├─ README.md
 ├─ README.$lang.md
 ```
 
-* `HUMAN_PROMPTS.*.md`：核心提示词（直接喂给模型）
+* `REAL_FUCKING_LLM.*.md`：核心提示词（直接喂给模型）
 * `README.*.md`：各语言文档
-
----
-
-## 🌍 语言
-
-* 🇺🇸 [English](README.md)
-* 🇨🇳 [简体中文](README.zh-CN.md)
-* 🇯🇵 [日本語](README.ja.md)
-* 🇻🇳 [Tiếng Việt](README.vi.md)
-* 🇪🇸 [Español](README.es.md)
-* 🇰🇷 [한국어](README.ko.md)
 
 ---
 
@@ -68,14 +69,14 @@
 
 ### Claude Code
 作为子命令(`commands`)使用:
-1. 创建 `.claude/commands/HUMAN_PROMPTS.md`, 将 `prompts/HUMAN_PROMPTS.xxx.md` 内容复制到文件中
-2. 在 `claude` 对话中输入 `@.claude/commands/HUMAN_PROMPTS.md`
+1. 创建 `.claude/commands/REAL_FUCKING_LLM.md`, 将 `prompts/REAL_FUCKING_LLM.xxx.md` 内容复制到文件中
+2. 在 `claude` 对话中输入 `@.claude/commands/REAL_FUCKING_LLM.md`
 
 ### Trae（作为智能体）
-点击 **创建智能体**, 将 `prompts/HUMAN_PROMPTS.xxx.md` 内容复制过来
+点击 **创建智能体**, 将 `prompts/REAL_FUCKING_LLM.xxx.md` 内容复制过来
 
 ### 通用 LLM / Agent
-直接将 `prompts/HUMAN_PROMPTS.xxx.md` 内容复制到对话中, 或者设置为系统提示词
+直接将 `prompts/REAL_FUCKING_LLM.xxx.md` 内容复制到对话中, 或者设置为系统提示词
 
 
 ## 🧪 行为规则摘要

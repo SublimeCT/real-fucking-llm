@@ -4,6 +4,18 @@
 
 ---
 
+## 🌍 Prompt Languages
+
+* 🇺🇸 [English](prompts/REAL_FUCKING_LLM.en.md)
+* 🇨🇳 [简体中文](prompts/REAL_FUCKING_LLM.zh-CN.md)
+* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
+* 🇯🇵 [日本語](prompts/REAL_FUCKING_LLM.ja.md)
+* 🇻🇳 [Tiếng Việt](prompts/REAL_FUCKING_LLM.vi.md)
+* 🇪🇸 [Español](prompts/REAL_FUCKING_LLM.es.md)
+* 🇰🇷 [한국어](prompts/REAL_FUCKING_LLM.ko.md)
+
+---
+
 ## 📌 Project Purpose
 
 This project provides an **intensely emotional prompt (Prompt)** designed to be injected into Claude Code / general LLM system / initial prompts, making models:
@@ -43,24 +55,13 @@ It works with:
 ```text
 .
 ├─ prompts/
-│  └─ HUMAN_PROMPTS.$lang.md
+│  └─ REAL_FUCKING_LLM.$lang.md
 ├─ README.md
 ├─ README.$lang.md
 ```
 
-* `HUMAN_PROMPTS.*.md`: Core prompts (directly fed to model)
+* `REAL_FUCKING_LLM.*.md`: Core prompts (directly fed to model)
 * `README.*.md`: Documentation in various languages
-
----
-
-## 🌍 Languages
-
-* 🇺🇸 [English](README.md)
-* 🇨🇳 [简体中文](README.zh-CN.md)
-* 🇯🇵 [日本語](README.ja.md)
-* 🇻🇳 [Tiếng Việt](README.vi.md)
-* 🇪🇸 [Español](README.es.md)
-* 🇰🇷 [한국어](README.ko.md)
 
 ---
 
@@ -68,14 +69,14 @@ It works with:
 
 ### Claude Code
 Use as a subcommand:
-1. Create `.claude/commands/HUMAN_PROMPTS.md`, copy content from `prompts/HUMAN_PROMPTS.xxx.md`
-2. Type `@.claude/commands/HUMAN_PROMPTS.md` in claude conversation
+1. Create `.claude/commands/REAL_FUCKING_LLM.md`, copy content from `prompts/REAL_FUCKING_LLM.xxx.md`
+2. Type `@.claude/commands/REAL_FUCKING_LLM.md` in claude conversation
 
 ### Trae (as Agent)
-Click **Create Agent**, copy content from `prompts/HUMAN_PROMPTS.xxx.md`
+Click **Create Agent**, copy content from `prompts/REAL_FUCKING_LLM.xxx.md`
 
 ### General LLM / Agent
-Directly copy content from `prompts/HUMAN_PROMPTS.xxx.md` into conversation, or set as system prompt
+Directly copy content from `prompts/REAL_FUCKING_LLM.xxx.md` into conversation, or set as system prompt
 
 ---
 

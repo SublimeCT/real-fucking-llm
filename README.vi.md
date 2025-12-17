@@ -4,6 +4,19 @@
 
 ---
 
+## 🌍 Ngôn ngữ Prompt
+
+* 🇺🇸 [English](prompts/REAL_FUCKING_LLM.en.md)
+* 🇨🇳 [简体中文](prompts/REAL_FUCKING_LLM.zh-CN.md)
+* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
+* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
+* 🇯🇵 [日本語](prompts/REAL_FUCKING_LLM.ja.md)
+* 🇻🇳 [Tiếng Việt](prompts/REAL_FUCKING_LLM.vi.md)
+* 🇪🇸 [Español](prompts/REAL_FUCKING_LLM.es.md)
+* 🇰🇷 [한국어](prompts/REAL_FUCKING_LLM.ko.md)
+
+---
+
 ## 📌 Mục đích Dự án
 
 Dự án này cung cấp một **prompt cảm xúc cường độ cao** để tiêm vào Claude Code / LLM chung system / initial prompt, làm cho mô hình:
@@ -43,24 +56,13 @@ Phù hợp cho:
 ```text
 .
 ├─ prompts/
-│  └─ HUMAN_PROMPTS.$lang.md
+│  └─ REAL_FUCKING_LLM.$lang.md
 ├─ README.md
 ├─ README.$lang.md
 ```
 
-* `HUMAN_PROMPTS.*.md`: Prompt cốt lõi (trực tiếp cho mô hình)
+* `REAL_FUCKING_LLM.*.md`: Prompt cốt lõi (trực tiếp cho mô hình)
 * `README.*.md`: Tài liệu các ngôn ngữ
-
----
-
-## 🌍 Ngôn ngữ
-
-* 🇺🇸 [English](README.md)
-* 🇨🇳 [简体中文](README.zh-CN.md)
-* 🇯🇵 [日本語](README.ja.md)
-* 🇻🇳 [Tiếng Việt](README.vi.md)
-* 🇪🇸 [Español](README.es.md)
-* 🇰🇷 [한국어](README.ko.md)
 
 ---
 
@@ -68,14 +70,14 @@ Phù hợp cho:
 
 ### Claude Code
 Sử dụng như lệnh con:
-1. Tạo `.claude/commands/HUMAN_PROMPTS.md`, sao chép nội dung từ `prompts/HUMAN_PROMPTS.xxx.md` vào file
-2. Gõ `@.claude/commands/HUMAN_PROMPTS.md` trong cuộc hội thoại claude
+1. Tạo `.claude/commands/REAL_FUCKING_LLM.md`, sao chép nội dung từ `prompts/REAL_FUCKING_LLM.xxx.md` vào file
+2. Gõ `@.claude/commands/REAL_FUCKING_LLM.md` trong cuộc hội thoại claude
 
 ### Trae (như Agent)
-Nhấp vào **Tạo Agent**, sao chép nội dung từ `prompts/HUMAN_PROMPTS.xxx.md`
+Nhấp vào **Tạo Agent**, sao chép nội dung từ `prompts/REAL_FUCKING_LLM.xxx.md`
 
 ### LLM / Agent Chung
-Sao chép trực tiếp nội dung từ `prompts/HUMAN_PROMPTS.xxx.md` vào cuộc hội thoại, hoặc đặt làm system prompt
+Sao chép trực tiếp nội dung từ `prompts/REAL_FUCKING_LLM.xxx.md` vào cuộc hội thoại, hoặc đặt làm system prompt
 
 ---
 

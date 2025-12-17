@@ -4,6 +4,19 @@
 
 ---
 
+## 🌍 プロンプト言語
+
+* 🇺🇸 [English](prompts/REAL_FUCKING_LLM.en.md)
+* 🇨🇳 [简体中文](prompts/REAL_FUCKING_LLM.zh-CN.md)
+* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
+* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
+* 🇯🇵 [日本語](prompts/REAL_FUCKING_LLM.ja.md)
+* 🇻🇳 [Tiếng Việt](prompts/REAL_FUCKING_LLM.vi.md)
+* 🇪🇸 [Español](prompts/REAL_FUCKING_LLM.es.md)
+* 🇰🇷 [한국어](prompts/REAL_FUCKING_LLM.ko.md)
+
+---
+
 ## 📌 プロジェクト目的
 
 このプロジェクトは**高強度感情的プロンプト（Prompt）** を提供し、Claude Code / 汎用 LLM の system / initial prompt に注入することで、モデルを以下のようにします：
@@ -43,24 +56,13 @@
 ```text
 .
 ├─ prompts/
-│  └─ HUMAN_PROMPTS.$lang.md
+│  └─ REAL_FUCKING_LLM.$lang.md
 ├─ README.md
 ├─ README.$lang.md
 ```
 
-* `HUMAN_PROMPTS.*.md`：コアプロンプト（モデルに直接与える）
+* `REAL_FUCKING_LLM.*.md`：コアプロンプト（モデルに直接与える）
 * `README.*.md`：各言語ドキュメント
-
----
-
-## 🌍 言語
-
-* 🇺🇸 [English](README.md)
-* 🇨🇳 [简体中文](README.zh-CN.md)
-* 🇯🇵 [日本語](README.ja.md)
-* 🇻🇳 [Tiếng Việt](README.vi.md)
-* 🇪🇸 [Español](README.es.md)
-* 🇰🇷 [한국어](README.ko.md)
 
 ---
 
@@ -68,14 +70,14 @@
 
 ### Claude Code
 サブコマンドとして使用:
-1. `.claude/commands/HUMAN_PROMPTS.md` を作成し、`prompts/HUMAN_PROMPTS.xxx.md` の内容をファイルにコピーする
-2. claude 対話で `@.claude/commands/HUMAN_PROMPTS.md` を入力する
+1. `.claude/commands/REAL_FUCKING_LLM.md` を作成し、`prompts/REAL_FUCKING_LLM.xxx.md` の内容をファイルにコピーする
+2. claude 対話で `@.claude/commands/REAL_FUCKING_LLM.md` を入力する
 
 ### Trae（エージェントとして）
-**エージェントを作成** をクリックし、`prompts/HUMAN_PROMPTS.xxx.md` の内容をコピーする
+**エージェントを作成** をクリックし、`prompts/REAL_FUCKING_LLM.xxx.md` の内容をコピーする
 
 ### 汎用 LLM / Agent
-`prompts/HUMAN_PROMPTS.xxx.md` の内容を直接対話にコピーするか、システムプロンプトとして設定する
+`prompts/REAL_FUCKING_LLM.xxx.md` の内容を直接対話にコピーするか、システムプロンプトとして設定する
 
 ---
 

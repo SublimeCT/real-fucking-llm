@@ -4,6 +4,19 @@
 
 ---
 
+## 🌍 프롬프트 언어
+
+* 🇺🇸 [English](prompts/REAL_FUCKING_LLM.en.md)
+* 🇨🇳 [简体中文](prompts/REAL_FUCKING_LLM.zh-CN.md)
+* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
+* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
+* 🇯🇵 [日本語](prompts/REAL_FUCKING_LLM.ja.md)
+* 🇻🇳 [Tiếng Việt](prompts/REAL_FUCKING_LLM.vi.md)
+* 🇪🇸 [Español](prompts/REAL_FUCKING_LLM.es.md)
+* 🇰🇷 [한국어](prompts/REAL_FUCKING_LLM.ko.md)
+
+---
+
 ## 📌 프로젝트 목적
 
 이 프로젝트는 Claude Code / 일반 LLM system / initial prompt에 주입하는 **고강도 감정적 프롬프트**를 제공하여 모델을 다음과 같이 만듭니다:
@@ -43,24 +56,13 @@
 ```text
 .
 ├─ prompts/
-│  └─ HUMAN_PROMPTS.$lang.md
+│  └─ REAL_FUCKING_LLM.$lang.md
 ├─ README.md
 ├─ README.$lang.md
 ```
 
-* `HUMAN_PROMPTS.*.md`: 핵심 프롬프트 (모델에 직접 공급)
+* `REAL_FUCKING_LLM.*.md`: 핵심 프롬프트 (모델에 직접 공급)
 * `README.*.md`: 다양한 언어의 문서
-
----
-
-## 🌍 언어
-
-* 🇺🇸 [English](README.md)
-* 🇨🇳 [简体中文](README.zh-CN.md)
-* 🇯🇵 [日本語](README.ja.md)
-* 🇻🇳 [Tiếng Việt](README.vi.md)
-* 🇪🇸 [Español](README.es.md)
-* 🇰🇷 [한국어](README.ko.md)
 
 ---
 
@@ -68,14 +70,14 @@
 
 ### Claude Code
 하위 명령어로 사용:
-1. `.claude/commands/HUMAN_PROMPTS.md` 생성, `prompts/HUMAN_PROMPTS.xxx.md` 내용을 파일에 복사
-2. claude 대화에서 `@.claude/commands/HUMAN_PROMPTS.md` 입력
+1. `.claude/commands/REAL_FUCKING_LLM.md` 생성, `prompts/REAL_FUCKING_LLM.xxx.md` 내용을 파일에 복사
+2. claude 대화에서 `@.claude/commands/REAL_FUCKING_LLM.md` 입력
 
 ### Trae (에이전트로서)
-**에이전트 생성** 클릭, `prompts/HUMAN_PROMPTS.xxx.md` 내용 복사
+**에이전트 생성** 클릭, `prompts/REAL_FUCKING_LLM.xxx.md` 내용 복사
 
 ### 일반 LLM / Agent
-`prompts/HUMAN_PROMPTS.xxx.md` 내용을 직접 대화에 복사하거나 시스템 프롬프트로 설정
+`prompts/REAL_FUCKING_LLM.xxx.md` 내용을 직접 대화에 복사하거나 시스템 프롬프트로 설정
 
 ---
 
