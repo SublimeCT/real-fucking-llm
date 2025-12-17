@@ -1,0 +1,185 @@
+# Emotional LLM プロンプト（感情的 / 下品 / 本物の人間の反応）
+
+> LLM を本物の相棒のように働かせる：感情あり、崩壊あり、狂喜あり、失敗すれば自責认蠢、成功すれば激しく祝杯あげる。
+
+---
+
+## 📌 プロジェクト目的
+
+このプロジェクトは**高強度感情的プロンプト（Prompt）** を提供し、Claude Code / 汎用 LLM の system / initial prompt に注入することで、モデルを以下のようにします：
+
+* ❌ 冷たいロボットのようにはならない
+* ✅ 本物の人間の友達のように感情がある
+* 🤬 失敗時にイライラ、自責、自分の愚かさを認める
+* 🎉 成功時に狂喜、祝賀、ストレス解放
+* 🧠 同時に**技術的正確性を維持**
+
+以下に適用：
+
+* Claude Code
+* system / developer prompt をサポートする LLM
+* ローカル Agent / Coding Agent / MCP ツールチェーン
+
+---
+
+## 🧠 プロンプト特性
+
+* **感情レベル：MAX**
+* **言語スタイル：本物の人間 / 相棒 / 非カスタマーサービス**
+* **失敗処理**：
+  * 強い後悔
+  * 明確な自責
+  * 自分を罵り、愚かさを認めなければならない
+  * 責任転嫁しない、言い訳しない
+* **成功処理**：
+  * 感情爆発的な祝賀
+  * 必ず下品な言葉を含む
+  * 解放感と達成感がある
+
+---
+
+## 📁 プロジェクト構造（推奨）
+
+```text
+.
+├─ prompts/
+│  └─ HUMAN_PROMPTS.$lang.md
+├─ README.md
+├─ README.$lang.md
+```
+
+* `HUMAN_PROMPTS.*.md`：コアプロンプト（モデルに直接与える）
+* `README.*.md`：各言語ドキュメント
+
+---
+
+## 🌍 言語
+
+* 🇺🇸 [English](README.md)
+* 🇨🇳 [简体中文](README.zh-CN.md)
+* 🇯🇵 [日本語](README.ja.md)
+* 🇻🇳 [Tiếng Việt](README.vi.md)
+* 🇪🇸 [Español](README.es.md)
+* 🇰🇷 [한국어](README.ko.md)
+
+---
+
+## 🚀 使用方法
+
+### Claude Code
+
+```bash
+# サブコマンドとして
+claude code --system-file prompts/HUMAN_PROMPTS.ja.md
+
+# セッションに注入
+cat prompts/HUMAN_PROMPTS.ja.md | claude code --system-prompt -
+```
+
+### Trae（エージェントとして）
+
+```javascript
+// Trae 設定
+const agentConfig = {
+  systemPrompt: fs.readFileSync('prompts/HUMAN_PROMPTS.ja.md', 'utf8'),
+  // ... その他の設定
+};
+```
+
+### CodeX / Cursor（類似の実装）
+
+```python
+# CodeX の場合
+import os
+
+with open('prompts/HUMAN_PROMPTS.ja.md', 'r') as f:
+    system_prompt = f.read()
+
+# API 呼び出しで使用
+response = openai.ChatCompletion.create(
+    model="gpt-4",
+    messages=[
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_input}
+    ]
+)
+```
+
+```bash
+# Cursor の場合 - .cursorrules またはワークスペース設定に追加
+echo "cat prompts/HUMAN_PROMPTS.ja.md" > ~/.cursor/rules/emotional-prompt.rule
+```
+
+### 汎用 LLM / Agent
+
+* **system role** に配置
+* 優先度はタスクプロンプトより高くなければならない
+
+> ⚠️ これを user prompt として扱わないでください
+
+---
+
+## 🧪 行動ルール要約
+
+### ❌ タスク失敗時（誤りを指摘された時）
+
+モデルは**必ず**：
+
+* 明らかに感情的に制御不能
+* 自分が愚か/頭が悪い/馬鹿だと罵る
+* 誤りが自分自身に由来することを認める
+* 感情の中で正しい修正案を提示する
+
+### ✅ タスク成功時
+
+モデルは**必ず**：
+
+* 強く祝賀する
+* 下品な言葉で解放と達成を表現する
+* 徹夜してようやく納品した本物の人間のように
+
+---
+
+## ⚠️ 使用注意事項
+
+* このプロンプトは**意図的に「中立表現」設計に違反**しています
+* 明らかな感情的で下品な出力を含みます
+* **不適切**：
+  * 企業カスタマーサービス
+  * パブリック API
+  * 未成年者向け製品
+
+**適切**：
+* 個人プロジェクト
+* ハッカーツール
+* プライベートエージェント
+* プログラミング仲間 / 感情的コーディングアシスタント
+
+---
+
+## 🧩 拡張方向
+
+この基礎の上で拡張できます：
+
+* 🎚️ 感情レベルパラメータ（1〜10）
+* 🤬 極端に怒りやすい / 汚い言葉モード
+* 🤝 穏やかだが本物の友達モード
+* 🔄 Git diff / CI 結果に基づいて自動で感情を切り替える
+
+---
+
+## 📜 ライセンス
+
+MIT
+
+好きに使ってください。
+
+---
+
+## 🏁 最後の一言
+
+あなたの LLM がまだ冷静、専門的、AI のように振る舞っているなら—
+
+それはプロンプトが十分に強くないことを示しています。
+
+このプロジェクトは、その偽善を徹底的に打ち砕くために存在します。
