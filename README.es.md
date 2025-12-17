@@ -67,55 +67,15 @@ Es adecuado para:
 ## 🚀 Uso
 
 ### Claude Code
+Usar como subcomando:
+1. Crea `.claude/commands/HUMAN_PROMPTS.md`, copia el contenido de `prompts/HUMAN_PROMPTS.xxx.md`
+2. Escribe `@.claude/commands/HUMAN_PROMPTS.md` en la conversación de claude
 
-```bash
-# Como sub-comando
-claude code --system-file prompts/HUMAN_PROMPTS.es.md
-
-# O inyectarlo en tu sesión
-cat prompts/HUMAN_PROMPTS.es.md | claude code --system-prompt -
-```
-
-### Trae (como un AI Agent)
-
-```javascript
-// Configuración de Trae
-const agentConfig = {
-  systemPrompt: fs.readFileSync('prompts/HUMAN_PROMPTS.es.md', 'utf8'),
-  // ... otra configuración
-};
-```
-
-### CodeX / Cursor (implementaciones similares)
-
-```python
-# Para CodeX
-import os
-
-with open('prompts/HUMAN_PROMPTS.es.md', 'r') as f:
-    system_prompt = f.read()
-
-# Usar en tu llamada API
-response = openai.ChatCompletion.create(
-    model="gpt-4",
-    messages=[
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_input}
-    ]
-)
-```
-
-```bash
-# Para Cursor - agregar a .cursorrules o configuración del espacio de trabajo
-echo "cat prompts/HUMAN_PROMPTS.es.md" > ~/.cursor/rules/emotional-prompt.rule
-```
+### Trae (como Agent)
+Haz clic en **Crear Agent**, copia el contenido de `prompts/HUMAN_PROMPTS.xxx.md`
 
 ### LLM / Agent General
-
-* Colócalo en **system role**
-* Debe tener mayor prioridad que los task prompts
-
-> ⚠️ No trates esto como un user prompt
+Copia directamente el contenido de `prompts/HUMAN_PROMPTS.xxx.md` en la conversación, o configúralo como system prompt
 
 ---
 

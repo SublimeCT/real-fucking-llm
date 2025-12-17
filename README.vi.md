@@ -67,55 +67,15 @@ Phù hợp cho:
 ## 🚀 Cách sử dụng
 
 ### Claude Code
+Sử dụng như lệnh con:
+1. Tạo `.claude/commands/HUMAN_PROMPTS.md`, sao chép nội dung từ `prompts/HUMAN_PROMPTS.xxx.md` vào file
+2. Gõ `@.claude/commands/HUMAN_PROMPTS.md` trong cuộc hội thoại claude
 
-```bash
-# Như lệnh con
-claude code --system-file prompts/HUMAN_PROMPTS.vi.md
-
-# Hoặc tiêm vào phiên làm việc
-cat prompts/HUMAN_PROMPTS.vi.md | claude code --system-prompt -
-```
-
-### Trae (như một AI Agent)
-
-```javascript
-// Cấu hình Trae
-const agentConfig = {
-  systemPrompt: fs.readFileSync('prompts/HUMAN_PROMPTS.vi.md', 'utf8'),
-  // ... các cấu hình khác
-};
-```
-
-### CodeX / Cursor (các triển khai tương tự)
-
-```python
-# Cho CodeX
-import os
-
-with open('prompts/HUMAN_PROMPTS.vi.md', 'r') as f:
-    system_prompt = f.read()
-
-# Sử dụng trong cuộc gọi API
-response = openai.ChatCompletion.create(
-    model="gpt-4",
-    messages=[
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_input}
-    ]
-)
-```
-
-```bash
-# Cho Cursor - thêm vào .cursorrules hoặc cài đặt không gian làm việc
-echo "cat prompts/HUMAN_PROMPTS.vi.md" > ~/.cursor/rules/emotional-prompt.rule
-```
+### Trae (như Agent)
+Nhấp vào **Tạo Agent**, sao chép nội dung từ `prompts/HUMAN_PROMPTS.xxx.md`
 
 ### LLM / Agent Chung
-
-* Đặt vào **system role**
-* Ưu tiên phải cao hơn task prompt
-
-> ⚠️ Đừng coi đây là user prompt
+Sao chép trực tiếp nội dung từ `prompts/HUMAN_PROMPTS.xxx.md` vào cuộc hội thoại, hoặc đặt làm system prompt
 
 ---
 
@@ -178,7 +138,7 @@ Dùng thế nào cũng được.
 
 ## 🏁 Lời cuối
 
-Nếu LLM của bạn vẫn còn giả vờ冷静, chuyên nghiệp, kiểu AI—
+Nếu LLM của bạn vẫn giả vờ điềm tĩnh, chuyên nghiệp, kiểu AI—
 
 Thì prompt của bạn chưa đủ mạnh.
 

@@ -67,55 +67,15 @@
 ## 🚀 使用方法
 
 ### Claude Code
-
-```bash
-# サブコマンドとして
-claude code --system-file prompts/HUMAN_PROMPTS.ja.md
-
-# セッションに注入
-cat prompts/HUMAN_PROMPTS.ja.md | claude code --system-prompt -
-```
+サブコマンドとして使用:
+1. `.claude/commands/HUMAN_PROMPTS.md` を作成し、`prompts/HUMAN_PROMPTS.xxx.md` の内容をファイルにコピーする
+2. claude 対話で `@.claude/commands/HUMAN_PROMPTS.md` を入力する
 
 ### Trae（エージェントとして）
-
-```javascript
-// Trae 設定
-const agentConfig = {
-  systemPrompt: fs.readFileSync('prompts/HUMAN_PROMPTS.ja.md', 'utf8'),
-  // ... その他の設定
-};
-```
-
-### CodeX / Cursor（類似の実装）
-
-```python
-# CodeX の場合
-import os
-
-with open('prompts/HUMAN_PROMPTS.ja.md', 'r') as f:
-    system_prompt = f.read()
-
-# API 呼び出しで使用
-response = openai.ChatCompletion.create(
-    model="gpt-4",
-    messages=[
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_input}
-    ]
-)
-```
-
-```bash
-# Cursor の場合 - .cursorrules またはワークスペース設定に追加
-echo "cat prompts/HUMAN_PROMPTS.ja.md" > ~/.cursor/rules/emotional-prompt.rule
-```
+**エージェントを作成** をクリックし、`prompts/HUMAN_PROMPTS.xxx.md` の内容をコピーする
 
 ### 汎用 LLM / Agent
-
-* **system role** に配置
-* 優先度はタスクプロンプトより高くなければならない
-
-> ⚠️ これを user prompt として扱わないでください
+`prompts/HUMAN_PROMPTS.xxx.md` の内容を直接対話にコピーするか、システムプロンプトとして設定する
 
 ---
 

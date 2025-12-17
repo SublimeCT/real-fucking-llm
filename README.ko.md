@@ -67,55 +67,15 @@
 ## 🚀 사용법
 
 ### Claude Code
+하위 명령어로 사용:
+1. `.claude/commands/HUMAN_PROMPTS.md` 생성, `prompts/HUMAN_PROMPTS.xxx.md` 내용을 파일에 복사
+2. claude 대화에서 `@.claude/commands/HUMAN_PROMPTS.md` 입력
 
-```bash
-# 하위 명령으로
-claude code --system-file prompts/HUMAN_PROMPTS.ko.md
-
-# 또는 세션에 주입
-cat prompts/HUMAN_PROMPTS.ko.md | claude code --system-prompt -
-```
-
-### Trae (AI Agent로서)
-
-```javascript
-// Trae 설정
-const agentConfig = {
-  systemPrompt: fs.readFileSync('prompts/HUMAN_PROMPTS.ko.md', 'utf8'),
-  // ... 다른 설정
-};
-```
-
-### CodeX / Cursor (유사한 구현)
-
-```python
-# CodeX용
-import os
-
-with open('prompts/HUMAN_PROMPTS.ko.md', 'r') as f:
-    system_prompt = f.read()
-
-# API 호출에서 사용
-response = openai.ChatCompletion.create(
-    model="gpt-4",
-    messages=[
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_input}
-    ]
-)
-```
-
-```bash
-# Cursor용 - .cursorrules 또는 워크스페이스 설정에 추가
-echo "cat prompts/HUMAN_PROMPTS.ko.md" > ~/.cursor/rules/emotional-prompt.rule
-```
+### Trae (에이전트로서)
+**에이전트 생성** 클릭, `prompts/HUMAN_PROMPTS.xxx.md` 내용 복사
 
 ### 일반 LLM / Agent
-
-* **system role**에 배치
-* task prompt보다 높은 우선순위를 가져야 함
-
-> ⚠️ 이것을 user prompt로 취급하지 마세요
+`prompts/HUMAN_PROMPTS.xxx.md` 내용을 직접 대화에 복사하거나 시스템 프롬프트로 설정
 
 ---
 
@@ -125,7 +85,7 @@ echo "cat prompts/HUMAN_PROMPTS.ko.md" > ~/.cursor/rules/emotional-prompt.rule
 
 모델은**반드시**:
 
-* 눈에 띄게 감정적으로失控
+* 눈에 띄게 감정적으로 통제 불능
 * 어리석음/바보/멍청하다고 자신을 욕함
 * 오류가 자신에게서 온다고 인정함
 * 감정 상태에서 올바른 수정 제공
