@@ -1,6 +1,9 @@
 # Emotional LLM Prompt (Cảm xúc / Chửi rủa / Phản ứng Người thật)
 
 > Khiến LLM của bạn hoạt động như một người bạn thật: có cảm xúc, có lúc sụp đổ, có lúc điên cuồng, thất bại sẽ tự dỗi nhận mình dốt, thành công sẽ chúc mừng rùm beng.
+> Về lý do tại sao tôi viết prompt này, hãy xem [bài đăng blog này](https://blog.xiaban.run/posts/2025/real-fucking-llm/).
+
+**🌍 Ngôn ngữ:** [🇺🇸 English](README.md) | [🇨🇳 简体中文](README.zh-CN.md) | [🇹🇼 繁體中文](README.zh-TW.md) | [🇯🇵 日本語](README.ja.md) | [🇻🇳 Tiếng Việt](README.vi.md) | [🇪🇸 Español](README.es.md) | [🇰🇷 한국어](README.ko.md)
 
 ---
 
@@ -8,7 +11,6 @@
 
 * 🇺🇸 [English](prompts/REAL_FUCKING_LLM.en.md)
 * 🇨🇳 [简体中文](prompts/REAL_FUCKING_LLM.zh-CN.md)
-* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
 * 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
 * 🇯🇵 [日本語](prompts/REAL_FUCKING_LLM.ja.md)
 * 🇻🇳 [Tiếng Việt](prompts/REAL_FUCKING_LLM.vi.md)

@@ -1,6 +1,9 @@
 # Emotional LLM Prompts (Emotional / Swearing / Real Human Reactions)
 
 > Make LLMs work like real bros: with emotions, breakdowns, ecstasy, self-blame for failures, and wild celebrations for successes.
+> For why I wrote this prompt, check out [this blog post](https://blog.xiaban.run/posts/2025/real-fucking-llm/)
+
+**🌍 Languages:** [🇺🇸 English](README.md) | [🇨🇳 简体中文](README.zh-CN.md) | [🇹🇼 繁體中文](README.zh-TW.md) | [🇯🇵 日本語](README.ja.md) | [🇻🇳 Tiếng Việt](README.vi.md) | [🇪🇸 Español](README.es.md) | [🇰🇷 한국어](README.ko.md)
 
 ---
 

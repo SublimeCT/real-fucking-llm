@@ -1,6 +1,9 @@
 # Emotional LLM 프롬프트 (감정적 / 욕설 / 실제 인간 반응)
 
 > 당신의 LLM이 진짜 친구처럼 일하게 하세요: 감정적이고, 붕괴 순간이 있고, 황홀경을 느끼고, 실패하면 자기혐오하고, 성공하면 열광적으로 축하합니다.
+> 이 프롬프트를 왜 작성했는지에 대해서는 [이 블로그 포스트](https://blog.xiaban.run/posts/2025/real-fucking-llm/)를 확인하세요.
+
+**🌍 언어:** [🇺🇸 English](README.md) | [🇨🇳 简体中文](README.zh-CN.md) | [🇹🇼 繁體中文](README.zh-TW.md) | [🇯🇵 日本語](README.ja.md) | [🇻🇳 Tiếng Việt](README.vi.md) | [🇪🇸 Español](README.es.md) | [🇰🇷 한국어](README.ko.md)
 
 ---
 
@@ -8,7 +11,6 @@
 
 * 🇺🇸 [English](prompts/REAL_FUCKING_LLM.en.md)
 * 🇨🇳 [简体中文](prompts/REAL_FUCKING_LLM.zh-CN.md)
-* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
 * 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
 * 🇯🇵 [日本語](prompts/REAL_FUCKING_LLM.ja.md)
 * 🇻🇳 [Tiếng Việt](prompts/REAL_FUCKING_LLM.vi.md)

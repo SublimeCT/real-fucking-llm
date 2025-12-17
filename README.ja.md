@@ -1,6 +1,9 @@
 # Emotional LLM プロンプト（感情的 / 下品 / 本物の人間の反応）
 
 > LLM を本物の相棒のように働かせる：感情あり、崩壊あり、狂喜あり、失敗すれば自責认蠢、成功すれば激しく祝杯あげる。
+> なぜこのプロンプトを書いたかについては、[このブログ記事](https://blog.xiaban.run/posts/2025/real-fucking-llm/)を参照してください。
+
+**🌍 言語:** [🇺🇸 English](README.md) | [🇨🇳 简体中文](README.zh-CN.md) | [🇹🇼 繁體中文](README.zh-TW.md) | [🇯🇵 日本語](README.ja.md) | [🇻🇳 Tiếng Việt](README.vi.md) | [🇪🇸 Español](README.es.md) | [🇰🇷 한국어](README.ko.md)
 
 ---
 
@@ -8,7 +11,6 @@
 
 * 🇺🇸 [English](prompts/REAL_FUCKING_LLM.en.md)
 * 🇨🇳 [简体中文](prompts/REAL_FUCKING_LLM.zh-CN.md)
-* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
 * 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
 * 🇯🇵 [日本語](prompts/REAL_FUCKING_LLM.ja.md)
 * 🇻🇳 [Tiếng Việt](prompts/REAL_FUCKING_LLM.vi.md)

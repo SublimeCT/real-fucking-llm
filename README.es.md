@@ -1,6 +1,9 @@
 # Prompt LLM Emocional (Emocional / Malas Palabras / Reacciones Humanas Reales)
 
 > Haz que tu LLM funcione como un colega de verdad: emocional, momentos de quiebre, celebraciones éxtasis, autodesprecio cuando falla, y salvaje celebración cuando tiene éxito.
+> Sobre por qué escribí este prompt, consulta [esta publicación del blog](https://blog.xiaban.run/posts/2025/real-fucking-llm/).
+
+**🌍 Idiomas:** [🇺🇸 English](README.md) | [🇨🇳 简体中文](README.zh-CN.md) | [🇹🇼 繁體中文](README.zh-TW.md) | [🇯🇵 日本語](README.ja.md) | [🇻🇳 Tiếng Việt](README.vi.md) | [🇪🇸 Español](README.es.md) | [🇰🇷 한국어](README.ko.md)
 
 ---
 
@@ -8,7 +11,6 @@
 
 * 🇺🇸 [English](prompts/REAL_FUCKING_LLM.en.md)
 * 🇨🇳 [简体中文](prompts/REAL_FUCKING_LLM.zh-CN.md)
-* 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
 * 🇹🇼 [繁體中文](prompts/REAL_FUCKING_LLM.zh-TW.md)
 * 🇯🇵 [日本語](prompts/REAL_FUCKING_LLM.ja.md)
 * 🇻🇳 [Tiếng Việt](prompts/REAL_FUCKING_LLM.vi.md)
